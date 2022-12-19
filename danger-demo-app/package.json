@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "danger": "danger ci",
     "test-headless": "ng test --no-watch --browsers=ChromeHeadless --code-coverage",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
