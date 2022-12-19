@@ -14,7 +14,6 @@ jobs:
       - checkout
       - run: cd danger-demo-app && npm install
       - run: cd danger-demo-app && npm run build
-      - run: cd danger-demo-app && npm run danger
 
   test: #run unit tests
     working_directory: ~/app
@@ -24,7 +23,9 @@ jobs:
       - checkout  
       - run: cd danger-demo-app && npm install
       - run: cd danger-demo-app && npm run build
-      - run: cd danger-demo-app && npm run test-headless 
+      - run: cd danger-demo-app && npm run test-headless
+      - run: cd danger-demo-app && npm run danger # requires dangerfile.
+ 
 
 #  e2eTest: #run end to end tests
 #    executor: node/default

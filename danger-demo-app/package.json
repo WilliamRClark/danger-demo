@@ -1,5 +1,6 @@
 {
   "name": "danger-demo-app",
+  "type": "module",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -33,14 +34,15 @@
     "@angular/compiler-cli": "^15.0.0",
     "@cypress/schematic": "^2.4.0",
     "@types/jasmine": "~4.3.0",
+    "cypress": "latest",
     "danger": "^11.2.0",
+    "danger-plugin-code-coverage": "^1.2.0",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.8.2",
-    "cypress": "latest"
+    "typescript": "~4.8.2"
   }
 }
