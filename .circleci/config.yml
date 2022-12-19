@@ -12,8 +12,8 @@ jobs:
       - attach_workspace:
           at: .
       - checkout
-      - run: cd app && npm install
-      - run: cd app && npm run build
+      - run: cd danger-demo-app && npm install
+      - run: cd danger-demo-app && npm run build
 
   test: #run unit tests
     working_directory: ~/app
@@ -21,9 +21,9 @@ jobs:
     steps:
       - browser-tools/install-chrome
       - checkout  
-      - run: cd app && npm install
-      - run: cd app && npm run build
-      - run: cd app && npm run test-headless 
+      - run: cd danger-demo-app && npm install
+      - run: cd danger-demo-app && npm run build
+      - run: cd danger-demo-app && npm run test-headless 
 
   e2eTest: #run end to end tests
     executor: node/default
@@ -31,9 +31,9 @@ jobs:
     steps:
       - browser-tools/install-chrome
       - checkout  
-      - run: cd app && npm install
-      - run: cd app && npm run build
-      - run: cd app && npm run e2e 
+      - run: cd danger-demo-app && npm install
+      - run: cd danger-demo-app && npm run build
+      - run: cd danger-demo-app && npm run e2e 
       - store_artifacts: 
           path: ./danger-demo-app/tmp
 
