@@ -1,5 +1,6 @@
 {
   "name": "danger-demo-app",
+  "type": "module",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

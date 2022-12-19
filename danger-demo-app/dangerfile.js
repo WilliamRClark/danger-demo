@@ -1,5 +1,5 @@
 import {message, danger} from "danger"
-const { codeCoverage } = require("danger-plugin-code-coverage")
+import { codeCoverage } from "danger-plugin-code-coverage"
 
 
 const modifiedMD = danger.git.modified_files.join("- ")
