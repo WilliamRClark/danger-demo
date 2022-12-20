@@ -1,6 +1,6 @@
 # DangerDemoApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+This is a sample Danger.js demo to test the functionality.
 
 ## Development server
 
