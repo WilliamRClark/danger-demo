@@ -14,7 +14,7 @@ jobs:
       - checkout
       - run: cd danger-demo-app && npm install
       - run: cd danger-demo-app && npm run build
-      - run: npm run danger
+      - run: cd danger-demo-app && npm run danger
 
   test: #run unit tests
     working_directory: ~/app
